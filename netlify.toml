@@ -5,8 +5,7 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[functions]
-  node_bundle = "all"
+
 
 # Configure environment variable overrides for production if needed
 [build.environment]
