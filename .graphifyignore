@@ -1,0 +1,38 @@
+# Images (Stops Claude subagents from parsing visuals)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+
+# Documents & Papers
+*.md
+*.mdx
+*.qmd
+*.pdf
+*.html
+*.txt
+*.rst
+*.yaml
+*.yml
+
+# Audio & Video (Stops local faster-whisper transcriptions)
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.avi
+*.mkv
+
+# Office & Google Workspace Files
+*.docx
+*.xlsx
+*.gdoc
+*.gsheet
+*.gslides
+
+# Build Outputs & Package Noise
+node_modules/
+dist/
+vendor/
+*.generated.py

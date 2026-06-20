@@ -61,6 +61,12 @@ export const chatModels: ChatModel[] = [
     description: "Fast non-reasoning model with tool use",
     gatewayOrder: ["xai"],
   },
+  {
+    id: "gemma4:31b-cloud",
+    name: "Gemma 4 31B Cloud",
+    provider: "ollama",
+    description: "High-performance model hosted via Ollama",
+  },
 ];
 
 export async function getCapabilities(): Promise<

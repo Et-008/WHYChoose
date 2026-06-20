@@ -1,0 +1,17 @@
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  # Increase timeout to 30 seconds to allow LLM to start streaming 
+  # and RAG retrieval to complete without timing out.
+  timeout = 30
+  # Ensure enough memory for the SDKs and embedding logic
+  node_bundle = "all"
+
+# Configure environment variable overrides for production if needed
+[build.environment]
+  NODE_VERSION = "20"

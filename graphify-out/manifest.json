@@ -1,0 +1,832 @@
+{
+  "/Users/arun/Projects/FrontEnd/ChatUI/.claude/settings.json": {
+    "mtime": 1781973028.990421,
+    "ast_hash": "bfee062c3962c14264fd704e975a6b38",
+    "semantic_hash": "bfee062c3962c14264fd704e975a6b38"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/.vscode/extensions.json": {
+    "mtime": 1781882013.5204003,
+    "ast_hash": "8d2eec11f757091ac2d8fdbc8ee8491f",
+    "semantic_hash": "8d2eec11f757091ac2d8fdbc8ee8491f"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/.vscode/settings.json": {
+    "mtime": 1781882013.5204656,
+    "ast_hash": "3fbce39a46d1fadab70dc24c4cedbd42",
+    "semantic_hash": "3fbce39a46d1fadab70dc24c4cedbd42"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/actions.ts": {
+    "mtime": 1781882013.520709,
+    "ast_hash": "1b7a06a2041885a122f281624eb20775",
+    "semantic_hash": "1b7a06a2041885a122f281624eb20775"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/api/auth/[...nextauth]/route.ts": {
+    "mtime": 1781882013.5208597,
+    "ast_hash": "4ac28b123ae09c6281e1deea3f5f90a3",
+    "semantic_hash": "4ac28b123ae09c6281e1deea3f5f90a3"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/api/auth/guest/route.ts": {
+    "mtime": 1781882013.5209494,
+    "ast_hash": "feb6ab7b10a1be40ee203151225a9f9a",
+    "semantic_hash": "feb6ab7b10a1be40ee203151225a9f9a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/auth.config.ts": {
+    "mtime": 1781882013.5210018,
+    "ast_hash": "c3a2a1443fdc0a89651db03865431dd5",
+    "semantic_hash": "c3a2a1443fdc0a89651db03865431dd5"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/auth.ts": {
+    "mtime": 1781882013.5210695,
+    "ast_hash": "d931eef18904ac076d5e5b2d63919105",
+    "semantic_hash": "d931eef18904ac076d5e5b2d63919105"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/layout.tsx": {
+    "mtime": 1781882013.5211353,
+    "ast_hash": "369fee927584e86ac1f938470378d5b3",
+    "semantic_hash": "369fee927584e86ac1f938470378d5b3"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/login/page.tsx": {
+    "mtime": 1781882013.5212247,
+    "ast_hash": "3b35b1f5c2b51510df0c003452800b59",
+    "semantic_hash": "3b35b1f5c2b51510df0c003452800b59"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(auth)/register/page.tsx": {
+    "mtime": 1781882013.5213044,
+    "ast_hash": "760194e5562fa9743b042204a7800b4d",
+    "semantic_hash": "760194e5562fa9743b042204a7800b4d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/actions.ts": {
+    "mtime": 1781882013.5213964,
+    "ast_hash": "e2d880c01754d8b4fce46cfb3af8537a",
+    "semantic_hash": "e2d880c01754d8b4fce46cfb3af8537a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/chat/[id]/stream/route.ts": {
+    "mtime": 1781882013.521574,
+    "ast_hash": "0109ae3437575a98467bb023048097f0",
+    "semantic_hash": "0109ae3437575a98467bb023048097f0"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/chat/route.ts": {
+    "mtime": 1781882013.5216534,
+    "ast_hash": "01b11570fd5849310686763f88b8b4d6",
+    "semantic_hash": "01b11570fd5849310686763f88b8b4d6"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/chat/schema.ts": {
+    "mtime": 1781882013.5217066,
+    "ast_hash": "10323893fb135f2ec77b26ef2f8e9eb8",
+    "semantic_hash": "10323893fb135f2ec77b26ef2f8e9eb8"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/document/route.ts": {
+    "mtime": 1781882013.5218053,
+    "ast_hash": "84c2b7626288e6c46e90846021014002",
+    "semantic_hash": "84c2b7626288e6c46e90846021014002"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/files/upload/route.ts": {
+    "mtime": 1781882013.5219254,
+    "ast_hash": "61f5f6caedab1172ec4c206ec9ea14cb",
+    "semantic_hash": "61f5f6caedab1172ec4c206ec9ea14cb"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/history/route.ts": {
+    "mtime": 1781882013.5220246,
+    "ast_hash": "eba5d9976f84b473c5ffc8019f8467da",
+    "semantic_hash": "eba5d9976f84b473c5ffc8019f8467da"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/messages/route.ts": {
+    "mtime": 1781882013.5221214,
+    "ast_hash": "f48c9774c296d97235a04ba7153b1eeb",
+    "semantic_hash": "f48c9774c296d97235a04ba7153b1eeb"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/models/route.ts": {
+    "mtime": 1781882013.5222173,
+    "ast_hash": "8c7af9e6d1545ab1cb38a0b9dfd6077a",
+    "semantic_hash": "8c7af9e6d1545ab1cb38a0b9dfd6077a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/suggestions/route.ts": {
+    "mtime": 1781882013.5223083,
+    "ast_hash": "bf558aa10dee24388a2efcf283649d6d",
+    "semantic_hash": "bf558aa10dee24388a2efcf283649d6d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/api/vote/route.ts": {
+    "mtime": 1781882013.5224006,
+    "ast_hash": "9bc7dd8130da94cb92859ca2e95117ac",
+    "semantic_hash": "9bc7dd8130da94cb92859ca2e95117ac"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/chat/[id]/page.tsx": {
+    "mtime": 1781882013.5225132,
+    "ast_hash": "7600009e62aa5e69a590070a09ea1175",
+    "semantic_hash": "7600009e62aa5e69a590070a09ea1175"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/layout.tsx": {
+    "mtime": 1781882013.522569,
+    "ast_hash": "ab55e13ce548bc91253bbf96b88b23c3",
+    "semantic_hash": "ab55e13ce548bc91253bbf96b88b23c3"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/(chat)/page.tsx": {
+    "mtime": 1781882013.522717,
+    "ast_hash": "7600009e62aa5e69a590070a09ea1175",
+    "semantic_hash": "7600009e62aa5e69a590070a09ea1175"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/app/layout.tsx": {
+    "mtime": 1781882013.5230923,
+    "ast_hash": "6e091ec0ecea9fbb1ac3ee318694ccc8",
+    "semantic_hash": "6e091ec0ecea9fbb1ac3ee318694ccc8"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/actions.ts": {
+    "mtime": 1781882013.5231729,
+    "ast_hash": "9617d0190b4e337a99959c9e2c2478b0",
+    "semantic_hash": "9617d0190b4e337a99959c9e2c2478b0"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/code/client.tsx": {
+    "mtime": 1781882013.5233278,
+    "ast_hash": "23a8a8b0906298e08f6dc3c5360316a7",
+    "semantic_hash": "23a8a8b0906298e08f6dc3c5360316a7"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/code/server.ts": {
+    "mtime": 1781882013.5233908,
+    "ast_hash": "0cdd9f6413a8d193ce81d13822b8e58a",
+    "semantic_hash": "0cdd9f6413a8d193ce81d13822b8e58a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/image/client.tsx": {
+    "mtime": 1781882013.5234795,
+    "ast_hash": "737286255965aa2ea7d5e45b6166db79",
+    "semantic_hash": "737286255965aa2ea7d5e45b6166db79"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/sheet/client.tsx": {
+    "mtime": 1781882013.5235705,
+    "ast_hash": "2aea88ff6f1d0923a5967bbcfc1d1420",
+    "semantic_hash": "2aea88ff6f1d0923a5967bbcfc1d1420"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/sheet/server.ts": {
+    "mtime": 1781882013.5236194,
+    "ast_hash": "e8c1ff9a7633fbe19d554c2ee8445e98",
+    "semantic_hash": "e8c1ff9a7633fbe19d554c2ee8445e98"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/text/client.tsx": {
+    "mtime": 1781882013.5237668,
+    "ast_hash": "b7a134c3aab85801cddd96d420397dc7",
+    "semantic_hash": "b7a134c3aab85801cddd96d420397dc7"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/artifacts/text/server.ts": {
+    "mtime": 1781882013.5238132,
+    "ast_hash": "cedfb2722bba34faee54b967a7125f2d",
+    "semantic_hash": "cedfb2722bba34faee54b967a7125f2d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components.json": {
+    "mtime": 1781882013.5239162,
+    "ast_hash": "2e475efaee17ad0cae18f4b2b176b13d",
+    "semantic_hash": "2e475efaee17ad0cae18f4b2b176b13d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/code-block.tsx": {
+    "mtime": 1781882013.5241654,
+    "ast_hash": "e9b9212a5051bb2c25541fe39d681102",
+    "semantic_hash": "e9b9212a5051bb2c25541fe39d681102"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/conversation.tsx": {
+    "mtime": 1781882013.5242932,
+    "ast_hash": "8cdbde1fbe8ca630a0d7fa7a5a064c73",
+    "semantic_hash": "8cdbde1fbe8ca630a0d7fa7a5a064c73"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/message.tsx": {
+    "mtime": 1781882013.5243738,
+    "ast_hash": "36c231d39fbce13fecf59c5c191d8794",
+    "semantic_hash": "36c231d39fbce13fecf59c5c191d8794"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/model-selector.tsx": {
+    "mtime": 1781882013.5245023,
+    "ast_hash": "3623b66da16b46b72b6db81de7413cc9",
+    "semantic_hash": "3623b66da16b46b72b6db81de7413cc9"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/prompt-input.tsx": {
+    "mtime": 1781882013.5246494,
+    "ast_hash": "10c7da303aac9242744165951a887c5c",
+    "semantic_hash": "10c7da303aac9242744165951a887c5c"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/reasoning.tsx": {
+    "mtime": 1781882013.5248108,
+    "ast_hash": "674e09a48d7816ca20a8497803083d7c",
+    "semantic_hash": "674e09a48d7816ca20a8497803083d7c"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/shimmer.tsx": {
+    "mtime": 1781882013.524871,
+    "ast_hash": "180f937aefa80c0b870d11aad7c1eb43",
+    "semantic_hash": "180f937aefa80c0b870d11aad7c1eb43"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/suggestion.tsx": {
+    "mtime": 1781882013.5249295,
+    "ast_hash": "12ee080e135b6beffa7cc0d7be596f2c",
+    "semantic_hash": "12ee080e135b6beffa7cc0d7be596f2c"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ai-elements/tool.tsx": {
+    "mtime": 1781882013.5250864,
+    "ast_hash": "291f0b69514c04650f4f84d7a1aec363",
+    "semantic_hash": "291f0b69514c04650f4f84d7a1aec363"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/app-sidebar.tsx": {
+    "mtime": 1781882013.52529,
+    "ast_hash": "c119d488da38bac267061b66773b7d39",
+    "semantic_hash": "c119d488da38bac267061b66773b7d39"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/artifact-actions.tsx": {
+    "mtime": 1781882013.525373,
+    "ast_hash": "49502a9276a7d68c70808c8c5f696594",
+    "semantic_hash": "49502a9276a7d68c70808c8c5f696594"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/artifact-close-button.tsx": {
+    "mtime": 1781882013.5254338,
+    "ast_hash": "2a78159b92f23544e377ceb56fcc336e",
+    "semantic_hash": "2a78159b92f23544e377ceb56fcc336e"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/artifact-messages.tsx": {
+    "mtime": 1781882013.5254965,
+    "ast_hash": "8ff6c740981df20894566743e61f5e8d",
+    "semantic_hash": "8ff6c740981df20894566743e61f5e8d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/artifact.tsx": {
+    "mtime": 1781882013.5255997,
+    "ast_hash": "3db3d668057c600ff95016f2a4207785",
+    "semantic_hash": "3db3d668057c600ff95016f2a4207785"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/auth-form.tsx": {
+    "mtime": 1781882013.5256577,
+    "ast_hash": "9a9b6301a2d755d737113806c03a32e4",
+    "semantic_hash": "9a9b6301a2d755d737113806c03a32e4"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/chat-header.tsx": {
+    "mtime": 1781882013.525708,
+    "ast_hash": "3f82d640b8ff643ea644582e9af652ac",
+    "semantic_hash": "3f82d640b8ff643ea644582e9af652ac"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/code-editor.tsx": {
+    "mtime": 1781882013.525847,
+    "ast_hash": "c63d6665dcb3fb22b911a38a6c8e6fbd",
+    "semantic_hash": "c63d6665dcb3fb22b911a38a6c8e6fbd"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/console.tsx": {
+    "mtime": 1781882013.5259917,
+    "ast_hash": "3027a31516790c170a33615bb95ce501",
+    "semantic_hash": "3027a31516790c170a33615bb95ce501"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/create-artifact.tsx": {
+    "mtime": 1781882013.5260422,
+    "ast_hash": "5a21480d7cfb32c1ac4b6a26b45d9045",
+    "semantic_hash": "5a21480d7cfb32c1ac4b6a26b45d9045"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/data-stream-handler.tsx": {
+    "mtime": 1781882013.526095,
+    "ast_hash": "0bae11563f10068141374ef737571cec",
+    "semantic_hash": "0bae11563f10068141374ef737571cec"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/data-stream-provider.tsx": {
+    "mtime": 1781882013.5261462,
+    "ast_hash": "d429878298878478014c80061d12a3c2",
+    "semantic_hash": "d429878298878478014c80061d12a3c2"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/diffview.tsx": {
+    "mtime": 1781882013.5262108,
+    "ast_hash": "4f9faf437eb022a179bf712002018587",
+    "semantic_hash": "4f9faf437eb022a179bf712002018587"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/document-preview.tsx": {
+    "mtime": 1781882013.5262935,
+    "ast_hash": "39abd24ed0173f7e91ad85657d00f8f6",
+    "semantic_hash": "39abd24ed0173f7e91ad85657d00f8f6"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/document-skeleton.tsx": {
+    "mtime": 1781882013.5263464,
+    "ast_hash": "e43a182106626c4435d47d86d911ef22",
+    "semantic_hash": "e43a182106626c4435d47d86d911ef22"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/document.tsx": {
+    "mtime": 1781882013.5264802,
+    "ast_hash": "88aa20aea69d0deec32d340f398e5ca3",
+    "semantic_hash": "88aa20aea69d0deec32d340f398e5ca3"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/greeting.tsx": {
+    "mtime": 1781882013.5265322,
+    "ast_hash": "e9a49a61c7f9bec468b1558cba443496",
+    "semantic_hash": "e9a49a61c7f9bec468b1558cba443496"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/icons.tsx": {
+    "mtime": 1781882013.5266485,
+    "ast_hash": "9ae63b79cf9d0151e39d3d547082c2a8",
+    "semantic_hash": "9ae63b79cf9d0151e39d3d547082c2a8"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/image-editor.tsx": {
+    "mtime": 1781882013.5267158,
+    "ast_hash": "26c9b5bcec3be44f153d9af9474bc174",
+    "semantic_hash": "26c9b5bcec3be44f153d9af9474bc174"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/message-actions.tsx": {
+    "mtime": 1781882013.5268526,
+    "ast_hash": "f7a494b22963042ef16b93da9323eb91",
+    "semantic_hash": "f7a494b22963042ef16b93da9323eb91"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/message-editor.tsx": {
+    "mtime": 1781882013.5269175,
+    "ast_hash": "9782343cb5ca9d261283ad68a2665996",
+    "semantic_hash": "9782343cb5ca9d261283ad68a2665996"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/message-reasoning.tsx": {
+    "mtime": 1781882013.52697,
+    "ast_hash": "f02335bc0777428c104ff27666852cb4",
+    "semantic_hash": "f02335bc0777428c104ff27666852cb4"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/message.tsx": {
+    "mtime": 1781882013.5271552,
+    "ast_hash": "5697fabe23b6cdb5f4cfcd478a20d443",
+    "semantic_hash": "5697fabe23b6cdb5f4cfcd478a20d443"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/messages.tsx": {
+    "mtime": 1781882013.5272167,
+    "ast_hash": "41634512f335b6865d8959d5700345e0",
+    "semantic_hash": "41634512f335b6865d8959d5700345e0"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/multimodal-input.tsx": {
+    "mtime": 1781882013.527311,
+    "ast_hash": "fda33d6edf9f6d173deb5caaaa7d661f",
+    "semantic_hash": "fda33d6edf9f6d173deb5caaaa7d661f"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/preview-attachment.tsx": {
+    "mtime": 1781882013.527385,
+    "ast_hash": "b58e0e5e12ce55dc6bda75d9b6091d68",
+    "semantic_hash": "b58e0e5e12ce55dc6bda75d9b6091d68"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/preview.tsx": {
+    "mtime": 1781882013.5274384,
+    "ast_hash": "fb9960b284056e8dc086ed6f06e2710e",
+    "semantic_hash": "fb9960b284056e8dc086ed6f06e2710e"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/sheet-editor.tsx": {
+    "mtime": 1781882013.527495,
+    "ast_hash": "38e66d492fe72f015b1e93c3e8037e7d",
+    "semantic_hash": "38e66d492fe72f015b1e93c3e8037e7d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/shell.tsx": {
+    "mtime": 1781882013.5276268,
+    "ast_hash": "a95fa3b14b45bf11edb8ff9261d93e6c",
+    "semantic_hash": "a95fa3b14b45bf11edb8ff9261d93e6c"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/sidebar-history-item.tsx": {
+    "mtime": 1781882013.5277655,
+    "ast_hash": "aff464be46bfe5640bfddc0f3bc41585",
+    "semantic_hash": "aff464be46bfe5640bfddc0f3bc41585"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/sidebar-history.tsx": {
+    "mtime": 1781882013.5278492,
+    "ast_hash": "b8e8297fd1ea9884c344f6c15d64bdbd",
+    "semantic_hash": "b8e8297fd1ea9884c344f6c15d64bdbd"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/sidebar-toggle.tsx": {
+    "mtime": 1781882013.5279028,
+    "ast_hash": "1e778c4698ed18c7bd5b7a03e0195fde",
+    "semantic_hash": "1e778c4698ed18c7bd5b7a03e0195fde"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/sidebar-user-nav.tsx": {
+    "mtime": 1781882013.5280442,
+    "ast_hash": "a47fdcb3fde28af08c4c4d9c345e45e1",
+    "semantic_hash": "a47fdcb3fde28af08c4c4d9c345e45e1"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/sign-out-form.tsx": {
+    "mtime": 1781882013.528092,
+    "ast_hash": "f7d8269ec70f9e736d3f2fdfe3bfcbbb",
+    "semantic_hash": "f7d8269ec70f9e736d3f2fdfe3bfcbbb"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/slash-commands.tsx": {
+    "mtime": 1781882013.5281417,
+    "ast_hash": "7b0d2a8aa48fe6e083a18aeec42ac0fb",
+    "semantic_hash": "7b0d2a8aa48fe6e083a18aeec42ac0fb"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/submit-button.tsx": {
+    "mtime": 1781882013.528195,
+    "ast_hash": "fa80675a0fbf82c1e71270fd53f4436c",
+    "semantic_hash": "fa80675a0fbf82c1e71270fd53f4436c"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/suggested-actions.tsx": {
+    "mtime": 1781882013.528253,
+    "ast_hash": "38882caaac0a288b810daa9d0c84f729",
+    "semantic_hash": "38882caaac0a288b810daa9d0c84f729"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/suggestion.tsx": {
+    "mtime": 1781882013.5283058,
+    "ast_hash": "63e0104c5b3156154c36ad7f8318eeb5",
+    "semantic_hash": "63e0104c5b3156154c36ad7f8318eeb5"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/text-editor.tsx": {
+    "mtime": 1781882013.5285423,
+    "ast_hash": "0c72d358edbefaa90f822871cfdf8ae4",
+    "semantic_hash": "0c72d358edbefaa90f822871cfdf8ae4"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/toast.tsx": {
+    "mtime": 1781882013.5285938,
+    "ast_hash": "200343ca127586248ec16e1c043b5974",
+    "semantic_hash": "200343ca127586248ec16e1c043b5974"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/toolbar.tsx": {
+    "mtime": 1781882013.528683,
+    "ast_hash": "5d43f11c899bcbf09c09eb24b9c74747",
+    "semantic_hash": "5d43f11c899bcbf09c09eb24b9c74747"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/version-footer.tsx": {
+    "mtime": 1781882013.5288126,
+    "ast_hash": "defb325c13e5648081d01b1c4170d3f9",
+    "semantic_hash": "defb325c13e5648081d01b1c4170d3f9"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/visibility-selector.tsx": {
+    "mtime": 1781882013.5288699,
+    "ast_hash": "93526a7ffb55c88f3620d28da3c68c44",
+    "semantic_hash": "93526a7ffb55c88f3620d28da3c68c44"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/chat/weather.tsx": {
+    "mtime": 1781882013.528942,
+    "ast_hash": "eb3e1bcaf9ffa80b8c50767c90124ac9",
+    "semantic_hash": "eb3e1bcaf9ffa80b8c50767c90124ac9"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/theme-provider.tsx": {
+    "mtime": 1781882013.5289898,
+    "ast_hash": "7a6321362a7c800bdfaf6457a0e54b6d",
+    "semantic_hash": "7a6321362a7c800bdfaf6457a0e54b6d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/alert-dialog.tsx": {
+    "mtime": 1781882013.5291548,
+    "ast_hash": "a1b4f43321810ee387275df261debe04",
+    "semantic_hash": "a1b4f43321810ee387275df261debe04"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/badge.tsx": {
+    "mtime": 1781882013.5292096,
+    "ast_hash": "cceb5c2faafe4dc29900abedf914053d",
+    "semantic_hash": "cceb5c2faafe4dc29900abedf914053d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/button-group.tsx": {
+    "mtime": 1781882013.5292602,
+    "ast_hash": "c676cfb2a609f58e1ee5815acb69c084",
+    "semantic_hash": "c676cfb2a609f58e1ee5815acb69c084"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/button.tsx": {
+    "mtime": 1781882013.5293207,
+    "ast_hash": "c58522b48db11b5d0180ca3eec33f5bb",
+    "semantic_hash": "c58522b48db11b5d0180ca3eec33f5bb"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/collapsible.tsx": {
+    "mtime": 1781882013.5293682,
+    "ast_hash": "d3bc158594b1f19fd28d9868792d17f1",
+    "semantic_hash": "d3bc158594b1f19fd28d9868792d17f1"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/command.tsx": {
+    "mtime": 1781882013.5295093,
+    "ast_hash": "f6c9f9418df84cea99db7df0e940dc47",
+    "semantic_hash": "f6c9f9418df84cea99db7df0e940dc47"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/dialog.tsx": {
+    "mtime": 1781882013.529647,
+    "ast_hash": "d81b413843990474961fcda6c3243742",
+    "semantic_hash": "d81b413843990474961fcda6c3243742"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/dropdown-menu.tsx": {
+    "mtime": 1781882013.5298095,
+    "ast_hash": "da3dc50b2c5f3f44298c3472b9930068",
+    "semantic_hash": "da3dc50b2c5f3f44298c3472b9930068"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/hover-card.tsx": {
+    "mtime": 1781882013.529862,
+    "ast_hash": "eb489f176bbd1589d101ac4ed0002e18",
+    "semantic_hash": "eb489f176bbd1589d101ac4ed0002e18"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/input-group.tsx": {
+    "mtime": 1781882013.5299988,
+    "ast_hash": "143d6e6119ceee1814e165f578897316",
+    "semantic_hash": "143d6e6119ceee1814e165f578897316"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/input.tsx": {
+    "mtime": 1781882013.5300493,
+    "ast_hash": "448f4465abdd9f3d8ee69fb62c4ba77b",
+    "semantic_hash": "448f4465abdd9f3d8ee69fb62c4ba77b"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/label.tsx": {
+    "mtime": 1781882013.5300941,
+    "ast_hash": "e7e0c4ad98f3485ecd3c0ca516d0a8bf",
+    "semantic_hash": "e7e0c4ad98f3485ecd3c0ca516d0a8bf"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/popover.tsx": {
+    "mtime": 1781882013.5301414,
+    "ast_hash": "577aa2f760df2e0f40bbbc7f3dcc9e5d",
+    "semantic_hash": "577aa2f760df2e0f40bbbc7f3dcc9e5d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/scroll-area.tsx": {
+    "mtime": 1781882013.5301888,
+    "ast_hash": "5a04c269a377e8176ebbf27ee8ac35bf",
+    "semantic_hash": "5a04c269a377e8176ebbf27ee8ac35bf"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/select.tsx": {
+    "mtime": 1781882013.5303268,
+    "ast_hash": "db98dad1ee218b5ee6a77543184f1686",
+    "semantic_hash": "db98dad1ee218b5ee6a77543184f1686"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/separator.tsx": {
+    "mtime": 1781882013.5303774,
+    "ast_hash": "f57449eae78fbd87d99e4edc45ab3c1e",
+    "semantic_hash": "f57449eae78fbd87d99e4edc45ab3c1e"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/sheet.tsx": {
+    "mtime": 1781882013.5305204,
+    "ast_hash": "88ae90856f52f192e4e4fc550e0da311",
+    "semantic_hash": "88ae90856f52f192e4e4fc550e0da311"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/sidebar.tsx": {
+    "mtime": 1781882013.5306184,
+    "ast_hash": "902d9fdf5084422124b15c29e4189ece",
+    "semantic_hash": "902d9fdf5084422124b15c29e4189ece"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/skeleton.tsx": {
+    "mtime": 1781882013.5306764,
+    "ast_hash": "9443153ca97dad43d604c6d8a7684902",
+    "semantic_hash": "9443153ca97dad43d604c6d8a7684902"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/spinner.tsx": {
+    "mtime": 1781882013.5307238,
+    "ast_hash": "fd059d59ffd918b682307fc84fcb38e8",
+    "semantic_hash": "fd059d59ffd918b682307fc84fcb38e8"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/textarea.tsx": {
+    "mtime": 1781882013.530769,
+    "ast_hash": "f2ef163c1dff0f18bae6ed595ea712c1",
+    "semantic_hash": "f2ef163c1dff0f18bae6ed595ea712c1"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/components/ui/tooltip.tsx": {
+    "mtime": 1781882013.5308247,
+    "ast_hash": "930ad4e5ae645d9f49c142a7977e0502",
+    "semantic_hash": "930ad4e5ae645d9f49c142a7977e0502"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/drizzle.config.ts": {
+    "mtime": 1781882013.5308743,
+    "ast_hash": "26c24af165de49c5e1a0cf7e20d2732f",
+    "semantic_hash": "26c24af165de49c5e1a0cf7e20d2732f"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/hooks/use-active-chat.tsx": {
+    "mtime": 1781882013.5309696,
+    "ast_hash": "6e328230eda743fd129dd3a3210fb711",
+    "semantic_hash": "6e328230eda743fd129dd3a3210fb711"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/hooks/use-artifact.ts": {
+    "mtime": 1781882013.5310187,
+    "ast_hash": "6f2b3356c15af7fe8225cf84e8c7a8d4",
+    "semantic_hash": "6f2b3356c15af7fe8225cf84e8c7a8d4"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/hooks/use-auto-resume.ts": {
+    "mtime": 1781882013.5310643,
+    "ast_hash": "56b64190ddf8e96f1ce5875dbeed07e5",
+    "semantic_hash": "56b64190ddf8e96f1ce5875dbeed07e5"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/hooks/use-chat-visibility.ts": {
+    "mtime": 1781882013.5311124,
+    "ast_hash": "10d1ccb80b7a0f7050a97d54d8d7eda8",
+    "semantic_hash": "10d1ccb80b7a0f7050a97d54d8d7eda8"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/hooks/use-messages.tsx": {
+    "mtime": 1781882013.531164,
+    "ast_hash": "876552ba7ae9d3b7f70e5e969227cff4",
+    "semantic_hash": "876552ba7ae9d3b7f70e5e969227cff4"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/hooks/use-mobile.ts": {
+    "mtime": 1781882013.5312147,
+    "ast_hash": "209b5193af16624cdd89d3591480dd48",
+    "semantic_hash": "209b5193af16624cdd89d3591480dd48"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/hooks/use-scroll-to-bottom.tsx": {
+    "mtime": 1781882013.5312657,
+    "ast_hash": "ba006832a0e0bc24a53d7dbf45f1c99b",
+    "semantic_hash": "ba006832a0e0bc24a53d7dbf45f1c99b"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/instrumentation-client.ts": {
+    "mtime": 1781882013.5313106,
+    "ast_hash": "7a15a28a372363e1041df37a514cf4b4",
+    "semantic_hash": "7a15a28a372363e1041df37a514cf4b4"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/instrumentation.ts": {
+    "mtime": 1781882013.5313592,
+    "ast_hash": "f084b7816f86433afcf902b8ce22718a",
+    "semantic_hash": "f084b7816f86433afcf902b8ce22718a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/entitlements.ts": {
+    "mtime": 1781882013.5314672,
+    "ast_hash": "9c35c166cf171c8c2982959809679c28",
+    "semantic_hash": "9c35c166cf171c8c2982959809679c28"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/models.mock.ts": {
+    "mtime": 1781882013.5315166,
+    "ast_hash": "d0f515a0b31a81769fb9543c9ede0b63",
+    "semantic_hash": "d0f515a0b31a81769fb9543c9ede0b63"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/models.test.ts": {
+    "mtime": 1781882013.5315695,
+    "ast_hash": "2142f3183f24bff7e729a4fbda1ade2b",
+    "semantic_hash": "2142f3183f24bff7e729a4fbda1ade2b"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/models.ts": {
+    "mtime": 1781882013.531698,
+    "ast_hash": "bb282e6174eacf8f32f8f5ef4ec2234a",
+    "semantic_hash": "bb282e6174eacf8f32f8f5ef4ec2234a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/prompts.ts": {
+    "mtime": 1781882013.5319161,
+    "ast_hash": "bfd4344afcae25319e7c7b2d4f4a4db6",
+    "semantic_hash": "bfd4344afcae25319e7c7b2d4f4a4db6"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/providers.ts": {
+    "mtime": 1781882013.531975,
+    "ast_hash": "62eac148569e808c4717d65d806f2ca3",
+    "semantic_hash": "62eac148569e808c4717d65d806f2ca3"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/tools/create-document.ts": {
+    "mtime": 1781882013.532079,
+    "ast_hash": "d2db7703805c3c98f59b45a5fbb26e2d",
+    "semantic_hash": "d2db7703805c3c98f59b45a5fbb26e2d"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/tools/edit-document.ts": {
+    "mtime": 1781882013.532138,
+    "ast_hash": "37bdcb22a5302dc7571fee977ca9aacf",
+    "semantic_hash": "37bdcb22a5302dc7571fee977ca9aacf"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/tools/get-weather.ts": {
+    "mtime": 1781882013.5322,
+    "ast_hash": "9ee49cb2a3103f02ab2f6f8428e314f6",
+    "semantic_hash": "9ee49cb2a3103f02ab2f6f8428e314f6"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/tools/request-suggestions.ts": {
+    "mtime": 1781882013.5322595,
+    "ast_hash": "b15106e1c91a63091fafe471e2768157",
+    "semantic_hash": "b15106e1c91a63091fafe471e2768157"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ai/tools/update-document.ts": {
+    "mtime": 1781882013.5323129,
+    "ast_hash": "264ca649d7753bba324361320e3f44b4",
+    "semantic_hash": "264ca649d7753bba324361320e3f44b4"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/artifacts/server.ts": {
+    "mtime": 1781882013.5323932,
+    "ast_hash": "95c33b5e01cca1f9b213f4fddb553260",
+    "semantic_hash": "95c33b5e01cca1f9b213f4fddb553260"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/constants.ts": {
+    "mtime": 1781882013.532451,
+    "ast_hash": "30c7d97c42069a84b936d9441426aa30",
+    "semantic_hash": "30c7d97c42069a84b936d9441426aa30"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/db/migrate.ts": {
+    "mtime": 1781882013.5325506,
+    "ast_hash": "071a02315f96ff320b25a3b8e69b75ae",
+    "semantic_hash": "071a02315f96ff320b25a3b8e69b75ae"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/db/migrations/0000_initial.sql": {
+    "mtime": 1781882013.5326905,
+    "ast_hash": "8235d7a5bff339c2f7131dc4f388092b",
+    "semantic_hash": "8235d7a5bff339c2f7131dc4f388092b"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/db/migrations/meta/_journal.json": {
+    "mtime": 1781882013.532789,
+    "ast_hash": "86912e4e4813ee17226f24305f09c45c",
+    "semantic_hash": "86912e4e4813ee17226f24305f09c45c"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/db/queries.ts": {
+    "mtime": 1781882013.532876,
+    "ast_hash": "25fc545082f18765fec08ea6437f6e25",
+    "semantic_hash": "25fc545082f18765fec08ea6437f6e25"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/db/schema.ts": {
+    "mtime": 1781882013.5329473,
+    "ast_hash": "b4e0195f27baaafda9151e5c8b282e22",
+    "semantic_hash": "b4e0195f27baaafda9151e5c8b282e22"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/db/utils.ts": {
+    "mtime": 1781882013.533003,
+    "ast_hash": "5599e95bc331ebfd1db2913e8af5b5ce",
+    "semantic_hash": "5599e95bc331ebfd1db2913e8af5b5ce"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/editor/config.ts": {
+    "mtime": 1781882013.533083,
+    "ast_hash": "87c11ad0f2b2dbf4e52eca1621283b0a",
+    "semantic_hash": "87c11ad0f2b2dbf4e52eca1621283b0a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/editor/diff.js": {
+    "mtime": 1781882013.5331552,
+    "ast_hash": "e5b489ab9d615965fb7167166ce35f8a",
+    "semantic_hash": "e5b489ab9d615965fb7167166ce35f8a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/editor/functions.tsx": {
+    "mtime": 1781882013.5332162,
+    "ast_hash": "cba99bc7edc80fd42def24a213244db0",
+    "semantic_hash": "cba99bc7edc80fd42def24a213244db0"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/editor/react-renderer.tsx": {
+    "mtime": 1781882013.5332763,
+    "ast_hash": "f074d9de5ea3ad829bc4e881a5c15962",
+    "semantic_hash": "f074d9de5ea3ad829bc4e881a5c15962"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/editor/suggestions.tsx": {
+    "mtime": 1781882013.5333426,
+    "ast_hash": "ea63d8eee40fab1e2d2505d629389c45",
+    "semantic_hash": "ea63d8eee40fab1e2d2505d629389c45"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/errors.ts": {
+    "mtime": 1781882013.533413,
+    "ast_hash": "ab4cf96c41a1cb67db99d68b3416b5ad",
+    "semantic_hash": "ab4cf96c41a1cb67db99d68b3416b5ad"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/ratelimit.ts": {
+    "mtime": 1781882013.5334828,
+    "ast_hash": "f1e5fadeff26f55058840b6c90128af0",
+    "semantic_hash": "f1e5fadeff26f55058840b6c90128af0"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/types.ts": {
+    "mtime": 1781882013.5335402,
+    "ast_hash": "d2c9f043d8907d8580d5e119743f1ce5",
+    "semantic_hash": "d2c9f043d8907d8580d5e119743f1ce5"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/lib/utils.ts": {
+    "mtime": 1781882013.5336027,
+    "ast_hash": "3c08680b6ca58ccc872a2724fc4cbca0",
+    "semantic_hash": "3c08680b6ca58ccc872a2724fc4cbca0"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/next-env.d.ts": {
+    "mtime": 1781882758.189862,
+    "ast_hash": "d0f8375ae1199dc7acd3977fc33b78b8",
+    "semantic_hash": "d0f8375ae1199dc7acd3977fc33b78b8"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/next.config.ts": {
+    "mtime": 1781882013.533662,
+    "ast_hash": "f3bb40d53076b2a59801b3ac38e9bc76",
+    "semantic_hash": "f3bb40d53076b2a59801b3ac38e9bc76"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/package.json": {
+    "mtime": 1781882013.5337248,
+    "ast_hash": "5b611b1da6dd068f7e7809334b1bba77",
+    "semantic_hash": "5b611b1da6dd068f7e7809334b1bba77"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/playwright.config.ts": {
+    "mtime": 1781882013.53379,
+    "ast_hash": "b12abf1a6f986ccafd939a1afed61832",
+    "semantic_hash": "b12abf1a6f986ccafd939a1afed61832"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/postcss.config.mjs": {
+    "mtime": 1781882013.5344687,
+    "ast_hash": "4ae674cb9a5e6dc8c6afe2598c150776",
+    "semantic_hash": "4ae674cb9a5e6dc8c6afe2598c150776"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/proxy.ts": {
+    "mtime": 1781882013.5345278,
+    "ast_hash": "496e7bd3253ed7c75d5c8011d7255f28",
+    "semantic_hash": "496e7bd3253ed7c75d5c8011d7255f28"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/e2e/api.test.ts": {
+    "mtime": 1781882013.5351183,
+    "ast_hash": "7c10d97954d58062a4a793aad27e46e7",
+    "semantic_hash": "7c10d97954d58062a4a793aad27e46e7"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/e2e/auth.test.ts": {
+    "mtime": 1781882013.5351753,
+    "ast_hash": "415903b479264e4e6fc110c27a7cff3a",
+    "semantic_hash": "415903b479264e4e6fc110c27a7cff3a"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/e2e/chat.test.ts": {
+    "mtime": 1781882013.5352328,
+    "ast_hash": "c4a473e59a61286127371bf554b484e2",
+    "semantic_hash": "c4a473e59a61286127371bf554b484e2"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/e2e/model-selector.test.ts": {
+    "mtime": 1781882013.5352976,
+    "ast_hash": "0ba2053865e57ceb5cc914460e1b8d08",
+    "semantic_hash": "0ba2053865e57ceb5cc914460e1b8d08"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/fixtures.ts": {
+    "mtime": 1781882013.5353518,
+    "ast_hash": "47ae06f2c1878bf32fed5f56805354d1",
+    "semantic_hash": "47ae06f2c1878bf32fed5f56805354d1"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/helpers.ts": {
+    "mtime": 1781882013.5354035,
+    "ast_hash": "04e6fdf8edc2468c2cdb91d4c6a6872f",
+    "semantic_hash": "04e6fdf8edc2468c2cdb91d4c6a6872f"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/pages/chat.ts": {
+    "mtime": 1781882013.535506,
+    "ast_hash": "28afefb40539c81fa22df2724a6b2f69",
+    "semantic_hash": "28afefb40539c81fa22df2724a6b2f69"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tests/prompts/utils.ts": {
+    "mtime": 1781882013.5356019,
+    "ast_hash": "6f6f92f59a2020e8d385aa8f5cb33c5f",
+    "semantic_hash": "6f6f92f59a2020e8d385aa8f5cb33c5f"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/tsconfig.json": {
+    "mtime": 1781882013.5356612,
+    "ast_hash": "17675304c5a3264daf3b13f9682e76d2",
+    "semantic_hash": "17675304c5a3264daf3b13f9682e76d2"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/vercel-template.json": {
+    "mtime": 1781882013.5357187,
+    "ast_hash": "9dc0523d75702aa9170e87c177c1bfc3",
+    "semantic_hash": "9dc0523d75702aa9170e87c177c1bfc3"
+  },
+  "/Users/arun/Projects/FrontEnd/ChatUI/vercel.json": {
+    "mtime": 1781882013.5357785,
+    "ast_hash": "00535626cc43c9c63143d5c4911f78cd",
+    "semantic_hash": "00535626cc43c9c63143d5c4911f78cd"
+  }
+}

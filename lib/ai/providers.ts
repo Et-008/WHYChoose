@@ -1,4 +1,5 @@
 import { customProvider, gateway } from "ai";
+import { createOllama } from "ai-sdk-ollama";
 import { isTestEnvironment } from "../constants";
 import { titleModel } from "./models";
 
@@ -14,17 +15,26 @@ export const myProvider = isTestEnvironment
     })()
   : null;
 
+const ollamaProvider = createOllama({
+  baseURL: process.env.OLLAMA_BASE_URL || "http://localhost:11434",
+  headers: {
+    Authorization: `Bearer ${process.env.OLLAMA_API_KEY}`,
+  },
+});
+
 export function getLanguageModel(modelId: string) {
   if (isTestEnvironment && myProvider) {
     return myProvider.languageModel(modelId);
   }
 
-  return gateway.languageModel(modelId);
+  // Use Ollama provider instead of the Vercel Gateway
+  return ollamaProvider.languageModel(modelId);
 }
 
 export function getTitleModel() {
   if (isTestEnvironment && myProvider) {
     return myProvider.languageModel("title-model");
   }
-  return gateway.languageModel(titleModel.id);
+  
+  return ollamaProvider.languageModel(titleModel.id);
 }
