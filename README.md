@@ -1,71 +1,84 @@
 <a href="https://chatbot.ai-sdk.dev/demo">
-  <img alt="Chatbot" src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Chatbot</h1>
+  <img alt="WHYChoose" src="app/(chat)/opengraph-image.png">
+  <h1 align="center">WHYChoose</h1>
 </a>
 
 <p align="center">
-    Chatbot (formerly AI Chatbot) is a free, open-source template built with Next.js and the AI SDK that helps you quickly build powerful chatbot applications.
+    WHYChoose is a professional RAG-powered (Retrieval Augmented Generation) AI assistant built with Next.js and the AI SDK, specialized in querying internal knowledge bases to provide accurate, document-backed responses.
 </p>
 
 <p align="center">
-  <a href="https://chatbot.ai-sdk.dev/docs"><strong>Read Docs</strong></a> ·
   <a href="#features"><strong>Features</strong></a> ·
+  <a href="#architecture"><strong>Architecture</strong></a> ·
   <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
+  <a href="#deploy"><strong>Deploy</strong></a> ·
   <a href="#running-locally"><strong>Running locally</strong></a>
 </p>
 <br/>
 
 ## Features
 
+- **RAG Integration**: Custom retrieval pipeline using Qdrant Vector DB and Hugging Face embeddings for context-aware responses.
 - [Next.js](https://nextjs.org) App Router
   - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
+  - React Server Components (RSCs) and Server Actions for server-side rendering
 - [AI SDK](https://ai-sdk.dev/docs/introduction)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports OpenAI, Anthropic, Google, xAI, and other model providers via AI Gateway
+  - Unified API for generating text and streaming responses
+  - Seamless integration with Ollama for private/cloud LLM hosting
 - [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
+  - Modern UI components with [Tailwind CSS](https://tailwindcss.com) and [Radix UI](https://radix-ui.com)
 - Data Persistence
   - [Neon Serverless Postgres](https://vercel.com/marketplace/neon) for saving chat history and user data
   - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
 - [Auth.js](https://authjs.dev)
   - Simple and secure authentication
 
+## Architecture
+
+WHYChoose implements a state-of-the-art RAG pipeline:
+1. **Embedding**: User queries are converted to vectors using the `BAAI/bge-small-en-v1.5` model via the Hugging Face Inference API.
+2. **Retrieval**: Vectors are used to query a **Qdrant** vector database to find the most relevant insurance policy documents.
+3. **Augmentation**: The retrieved documents are injected into the LLM system prompt as context.
+4. **Generation**: The final response is generated using the **Ollama** provider (e.g., Gemma 4), ensuring a private and scalable inference layer.
+
 ## Model Providers
 
-This template uses the [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) to access multiple AI models through a unified interface. Models are configured in `lib/ai/models.ts` with per-model provider routing. Included models: Mistral, Moonshot, DeepSeek, OpenAI, and xAI.
+The project uses a flexible provider system configured in `lib/ai/providers.ts`. While it supports various gateways, the primary production engine is powered by **Ollama**.
 
-### AI Gateway Authentication
+### Environment Configuration
 
-**For Vercel deployments**: Authentication is handled automatically via OIDC tokens.
+To run WHYChoose, you must provide the following keys in your `.env.local`:
 
-**For non-Vercel deployments**: You need to provide an AI Gateway API key by setting the `AI_GATEWAY_API_KEY` environment variable in your `.env.local` file.
+- `OLLAMA_BASE_URL`: The URL of your cloud-hosted Ollama instance.
+- `OLLAMA_API_KEY`: Authentication key for your Ollama instance.
+- `QDRANT_URL` & `QDRANT_API_KEY`: Credentials for your Qdrant Cloud instance.
+- `HF_TOKEN`: Hugging Face token for embedding generation.
+- `COLLECTION`: The Qdrant collection name (e.g., `insurance_policies_search`).
+- `MODEL`: The embedding model name (e.g., `BAAI/bge-small-en-v1.5`).
 
-With the [AI SDK](https://ai-sdk.dev/docs/introduction), you can also switch to direct LLM providers like [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://ai-sdk.dev/providers/ai-sdk-providers) with just a few lines of code.
+## Deploy
 
-## Deploy Your Own
+This project is optimized for deployment on **Netlify** or **Vercel**.
 
-You can deploy your own version of Chatbot to Vercel with one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/templates/next.js/chatbot)
+For Netlify deployments, a `netlify.toml` is included to handle serverless function timeouts and memory requirements necessary for AI streaming.
 
 ## Running locally
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
-
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various AI and authentication provider accounts.
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
-
+1. Install dependencies:
 ```bash
 pnpm install
-pnpm db:migrate # Setup database or apply latest database changes
+```
+
+2. Setup environment variables in `.env.local` based on the provided examples.
+
+3. Initialize database:
+```bash
+pnpm db:migrate
+```
+
+4. Start the development server:
+```bash
 pnpm dev
 ```
 
-Your app template should now be running on [localhost:3000](http://localhost:3000).
+Your app should now be running on [localhost:3000](http://localhost:3000).
