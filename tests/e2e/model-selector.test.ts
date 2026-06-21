@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const MODEL_BUTTON_REGEX = /Kimi|Codestral|Mistral|DeepSeek|GPT|Grok/i;
+const MODEL_BUTTON_REGEX = /Kimi|Codestral|Mistral|DeepSeek|GPT|Grok|Gemma/i;
 
 test.describe("Model Selector", () => {
   test.beforeEach(async ({ page }) => {
@@ -33,9 +33,9 @@ test.describe("Model Selector", () => {
     await modelButton.click();
 
     const searchInput = page.getByPlaceholder("Search models...");
-    await searchInput.fill("Mistral");
+    await searchInput.fill("Gemma");
 
-    await expect(page.getByText("Mistral Small").first()).toBeVisible();
+    await expect(page.getByText("Gemma 4").first()).toBeVisible();
   });
 
   test("can close model selector by clicking outside", async ({ page }) => {
@@ -52,6 +52,7 @@ test.describe("Model Selector", () => {
     await expect(page.getByPlaceholder("Search models...")).not.toBeVisible();
   });
 
+  // biome-ignore lint/suspicious/noSkippedTests: <explanation>
   test("shows model provider groups", async ({ page }) => {
     const modelButton = page
       .locator("button")
@@ -63,6 +64,7 @@ test.describe("Model Selector", () => {
     await expect(page.getByText("Moonshot")).toBeVisible();
   });
 
+  // biome-ignore lint/suspicious/noSkippedTests: <explanation>
   test("can select a different model", async ({ page }) => {
     const modelButton = page
       .locator("button")

@@ -1,11 +1,10 @@
-export const DEFAULT_CHAT_MODEL = "moonshotai/kimi-k2.5";
+export const DEFAULT_CHAT_MODEL = "gemma4:31b-cloud";
 
 export const titleModel = {
-  id: "moonshotai/kimi-k2.5",
-  name: "Kimi K2.5",
-  provider: "moonshotai",
-  description: "Fast model for title generation",
-  gatewayOrder: ["fireworks", "bedrock"],
+  id: "gemma4:31b-cloud",
+  name: "Gemma 4 31B Cloud",
+  provider: "ollama",
+  description: "High-performance model for title generation",
 };
 
 export type ModelCapabilities = {
@@ -62,7 +61,7 @@ export const chatModels: ChatModel[] = [
   //   gatewayOrder: ["xai"],
   // },
   {
-    id: "gemma4:31b-cloud",
+    id: "google/gemma-4-31b-it",
     name: "Gemma 4 31B Cloud",
     provider: "ollama",
     description: "High-performance model hosted via Ollama",

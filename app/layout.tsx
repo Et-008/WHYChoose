@@ -9,7 +9,8 @@ import { SessionProvider } from "next-auth/react";
 export const metadata: Metadata = {
   metadataBase: new URL("https://chooseinsurance.netlify.app/"),
   title: "We Help You Choose - Insurance!",
-  description: "Your intelligent guide to finding the best insurance policies and understanding your coverage.",
+  description:
+    "Your intelligent guide to finding the best insurance policies and understanding your coverage.",
 };
 
 export const viewport = {
@@ -60,6 +61,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <meta content="WHYChoose" name="apple-mobile-web-app-title" />
         <script
           // biome-ignore lint/security/noDangerouslySetInnerHtml: "Required"
           dangerouslySetInnerHTML={{

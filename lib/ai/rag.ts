@@ -1,5 +1,6 @@
-import { QdrantClient } from '@qdrant/js-client-rest';
-import { HfInference } from '@huggingface/inference';
+/** biome-ignore-all lint/style/noNonNullAssertion: <explanation> */
+import { HfInference } from "@huggingface/inference";
+import { QdrantClient } from "@qdrant/js-client-rest";
 
 const hf = new HfInference(process.env.HF_TOKEN);
 
@@ -24,14 +25,14 @@ async function getEmbedding(text: string): Promise<number[]> {
     const vectors = result as number[][];
     const dim = vectors[0].length;
     const meanVector = new Array(dim).fill(0);
-    
+
     for (const vec of vectors) {
       for (let i = 0; i < dim; i++) {
         meanVector[i] += vec[i];
       }
     }
-    
-    return meanVector.map(v => v / vectors.length);
+
+    return meanVector.map((v) => v / vectors.length);
   }
 
   return result as number[];
@@ -43,24 +44,25 @@ async function getEmbedding(text: string): Promise<number[]> {
 export async function retrieveContext(query: string, limit = 5) {
   try {
     const vector = await getEmbedding(query);
-    
+
     const searchResult = await qdrantClient.search(process.env.COLLECTION!, {
       vector,
       limit,
       with_payload: true,
     });
 
-    // Extract the text content and source from the payload. 
+    // Extract the text content and source from the payload.
     // Assuming the payload has a 'text' or 'content' field, and a 'source' field.
     const documents = searchResult.map((hit) => {
-      const content = hit.payload?.text || hit.payload?.content || 'No content available';
-      const source = hit.payload?.source || 'Unknown Source';
+      const content =
+        hit.payload?.text || hit.payload?.content || "No content available";
+      const source = hit.payload?.source || "Unknown Source";
       return `Source: ${source}\nContent: ${content}`;
     });
 
-    return documents.join('\n\n---\n\n');
+    return documents.join("\n\n---\n\n");
   } catch (error) {
-    console.error('RAG Retrieval Error:', error);
-    return ''; // Return empty string so the chat can still function without context
+    console.error("RAG Retrieval Error:", error);
+    return ""; // Return empty string so the chat can still function without context
   }
 }

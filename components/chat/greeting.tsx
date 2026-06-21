@@ -9,7 +9,10 @@ export const Greeting = () => {
         initial={{ opacity: 0, y: 10 }}
         transition={{ delay: 0.35, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
-        We Help You Choose - Insurance
+        W<span className="text-muted-foreground text-2xl">e</span> H
+        <span className="text-muted-foreground text-2xl">elp</span> Y
+        <span className="text-muted-foreground text-2xl">ou</span> Choose -
+        Insurance
       </motion.div>
       <motion.div
         animate={{ opacity: 1, y: 0 }}

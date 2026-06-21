@@ -20,12 +20,12 @@ import {
 } from "@/lib/ai/models";
 import { type RequestHints, systemPrompt } from "@/lib/ai/prompts";
 import { getLanguageModel } from "@/lib/ai/providers";
+import { retrieveContext } from "@/lib/ai/rag";
 import { createDocument } from "@/lib/ai/tools/create-document";
 import { editDocument } from "@/lib/ai/tools/edit-document";
 import { getWeather } from "@/lib/ai/tools/get-weather";
 import { requestSuggestions } from "@/lib/ai/tools/request-suggestions";
 import { updateDocument } from "@/lib/ai/tools/update-document";
-import { retrieveContext } from "@/lib/ai/rag";
 import { isProductionEnvironment } from "@/lib/constants";
 import {
   createStreamId,
@@ -194,20 +194,21 @@ export async function POST(request: Request) {
       execute: async ({ writer: dataStream }) => {
         // RAG: Retrieve context from Qdrant based on the last user message
         let ragContext = "";
-        const lastMessage = uiMessages[uiMessages.length - 1];
+        const arrayIndexOfLastElement = Math.max(0, uiMessages.length - 1);
+        const lastMessage = uiMessages[arrayIndexOfLastElement];
         if (lastMessage?.role === "user") {
           const query = lastMessage.parts
             .filter((p) => p.type === "text")
             .map((p) => (p as any).text)
             .join(" ");
-          
+
           if (query) {
             ragContext = await retrieveContext(query);
           }
         }
 
-        const systemPromptWithRAG = ragContext 
-          ? `${systemPrompt({ requestHints, supportsTools })}\n\nRelevant Context from Knowledge Base:\n${ragContext}\n\nUse the provided context to inform your response. If the answer is not in the context, rely on your general knowledge but mention that it wasn't found in the internal documents.`
+        const systemPromptWithRAG = ragContext
+          ? `${systemPrompt({ requestHints, supportsTools })}\n\nRelevant Context from Knowledge Base:\n${ragContext}\n\nUse the provided context to inform your response. If the answer is not in the context, respond that it wasn't found in the internal documents.`
           : systemPrompt({ requestHints, supportsTools });
 
         const result = streamText({
