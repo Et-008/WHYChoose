@@ -50,10 +50,12 @@ export async function retrieveContext(query: string, limit = 5) {
       with_payload: true,
     });
 
-    // Extract the text content from the payload. 
-    // Assuming the payload has a 'text' or 'content' field.
+    // Extract the text content and source from the payload. 
+    // Assuming the payload has a 'text' or 'content' field, and a 'source' field.
     const documents = searchResult.map((hit) => {
-      return hit.payload?.text || hit.payload?.content || 'No content available';
+      const content = hit.payload?.text || hit.payload?.content || 'No content available';
+      const source = hit.payload?.source || 'Unknown Source';
+      return `Source: ${source}\nContent: ${content}`;
     });
 
     return documents.join('\n\n---\n\n');

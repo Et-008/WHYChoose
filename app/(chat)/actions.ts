@@ -25,18 +25,20 @@ export async function generateTitleFromUserMessage({
 }: {
   message: UIMessage;
 }) {
-  const { text } = await generateText({
-    model: getTitleModel(),
-    system: titlePrompt,
-    prompt: getTextFromMessage(message),
-    providerOptions: {
-      gateway: { order: titleModel.gatewayOrder },
-    },
-  });
+  // const { text } = await generateText({
+  //   model: getTitleModel(),
+  //   system: titlePrompt,
+  //   prompt: getTextFromMessage(message),
+  //   providerOptions: {
+  //     gateway: { order: titleModel.gatewayOrder },
+  //   },
+  // });
+  const text = getTextFromMessage(message);
   return text
     .replace(/^[#*"\s]+/, "")
     .replace(/["]+$/, "")
-    .trim();
+    .trim()
+    .substring(0, 100); // Limit length to prevent overly long titles
 }
 
 export async function deleteTrailingMessages({ id }: { id: string }) {
