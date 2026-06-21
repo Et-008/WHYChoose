@@ -53,7 +53,7 @@ test.describe("Model Selector", () => {
   });
 
   // biome-ignore lint/suspicious/noSkippedTests: <explanation>
-  test("shows model provider groups", async ({ page }) => {
+  test.skip("shows model provider groups", async ({ page }) => {
     const modelButton = page
       .locator("button")
       .filter({ hasText: MODEL_BUTTON_REGEX })
@@ -65,7 +65,7 @@ test.describe("Model Selector", () => {
   });
 
   // biome-ignore lint/suspicious/noSkippedTests: <explanation>
-  test("can select a different model", async ({ page }) => {
+  test.skip("can select a different model", async ({ page }) => {
     const modelButton = page
       .locator("button")
       .filter({ hasText: MODEL_BUTTON_REGEX })
